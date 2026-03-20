@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agar.io Rankings</title>
+    <link rel="stylesheet" href="alo.css">
+</head>
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <th class="main-title" colspan="6">AGAR.IO </th>
+            </tr>
+            <tr>
+                <th>LUGAR</th>
+                <th>GRUPO</th>
+                <th>LIDER</th>
+                <th>MASA TOTAL</th>
+                <th>KILLS</th>
+                <th>ULTIMOS ENFRENTAMIENTOS</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="2" class="region-cell">COLOMBIA</td>
+                <td>Zeta</td>
+                <td>Wolf</td>
+                <td>1.2M</td>
+                <td>4,500</td>
+                <td class="sube">▲</td>
+            </tr>
+            <tr>
+                <td>juli</td>
+                <td>SirMeow</td>
+                <td>980K</td>
+                <td>3,210</td>
+                <td class="baja">▼</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2" class="region-cell">MAURITANIA</td>
+                <td>[NBK] No Blood Kids</td>
+                <td>Shadow</td>
+                <td>1.5M</td>
+                <td>5,800</td>
+                <td class="sube">▲</td>
+            </tr>
+            <tr>
+                <td>[Hero] Heroes</td>
+                <td>Flash</td>
+                <td>850K</td>
+                <td>2,900</td>
+                <td class="sube">▲</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="4"> Campeón Actual: <strong>Arepepa </strong></td>
+                <td colspan="2">Total Clanes: 4</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
+
