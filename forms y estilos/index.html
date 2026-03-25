@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro VIP - Camino al Éxito</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="contenedor">
+
+    <header class="encabezado">
+      <h1>🤑 ¡Regístrate y vuélvete millonario!</h1>
+      <p>Únete a la élite y transforma tu futuro financiero hoy mismo.</p>
+    </header>
+
+    <form class="formulario-contacto" action="#" method="post" novalidate>
+
+      <div class="fila-doble">
+        <div class="campo">
+          <label for="contacto-nombre">
+            Nombre de inversor <span class="obligatorio">*</span>
+          </label>
+          <input 
+            type="text" 
+            id="contacto-nombre" 
+            name="nombre"
+            placeholder="Tu nombre de ganador"
+            required
+            autocomplete="name"
+            minlength="2"
+            maxlength="60">
+        </div>
+
+        <div class="campo">
+          <label for="contacto-email">
+            Correo electrónico VIP <span class="obligatorio">*</span>
+          </label>
+          <input 
+            type="email" 
+            id="contacto-email" 
+            name="email"
+            placeholder="ejemplo@exito.com"
+            required
+            autocomplete="email">
+        </div>
+      </div>
+
+      <div class="campo">
+        <label for="tipo-consulta">
+          Tu objetivo financiero <span class="obligatorio">*</span>
+        </label>
+        <select id="tipo-consulta" name="tipo_consulta" required>
+          <option value="">-- Selecciona tu meta --</option>
+          <optgroup label="Libertad Financiera">
+            <option value="retiro">Retiro joven</option>
+            <option value="inversion">Inversiones masivas</option>
+          </optgroup>
+          <optgroup label="Estilo de Vida">
+            <option value="viajes">Viajes de lujo</option>
+            <option value="propiedades">Bienes raíces</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <div class="campo">
+        <label for="asunto">Capital inicial estimado</label>
+        <input 
+          type="text" 
+          id="asunto" 
+          name="asunto"
+          placeholder="¿Con cuánto planeas empezar?"
+          maxlength="100">
+      </div>
+
+       <div class="campo">
+          <label for="edad">
+            Edad <span class="obligatorio">*</span>
+          </label>
+          <input 
+           type="number"   
+           name="edad"     
+           min="18" max="99"
+           placeholder="Mínimo 18 para invertir">
+        </div>
+
+      <div class="campo">
+        <label for="mensaje">
+          ¿Por qué quieres ser millonario? <span class="obligatorio">*</span>
+        </label>
+        <textarea 
+          id="mensaje" 
+          name="mensaje"
+          rows="4"
+          placeholder="Cuéntanos tus sueños y ambiciones..."
+          required
+          minlength="20"
+          maxlength="1000"></textarea>
+      </div>
+
+      <div class="campo">
+        <p class="label-grupo">¿Dónde quieres recibir tus alertas de ganancias?</p>
+        <div class="opciones-radio">
+          <input type="radio" id="via-email" name="via_contacto" value="email" checked>
+          <label for="via-email">📧 Email VIP</label>
+
+          <input type="radio" id="via-whatsapp" name="via_contacto" value="whatsapp">
+          <label for="via-whatsapp">📱 WhatsApp Directo</label>
+        </div>
+      </div>
+
+      <div class="campo campo-check">
+        <input type="checkbox" id="terminos" name="terminos" value="acepto" required>
+        <label for="terminos">
+          Acepto los <a href="#" target="_blank">términos de membresía</a> y riesgos.
+          <span class="obligatorio">*</span>
+        </label>
+      </div>
+
+      <div class="campo campo-check">
+        <input type="checkbox" id="newsletter" name="newsletter" value="si" checked>
+        <label for="newsletter">
+          💰 ¡Sí! Envíenme secretos para multiplicar mi dinero
+        </label>
+      </div>
+
+      <div class="acciones">
+        <button type="submit" class="btn-primario">
+          🚀 ¡QUIERO MI FORTUNA YA!
+        </button>
+      </div>
+
+    </form>
+  </main>
+</body>
+</html>

@@ -1,0 +1,193 @@
+/* === Variables y reset básico === */
+:root {
+  --primario: #FFD700; /* Dorado */
+  --primario-oscuro: #b8860b;
+  --texto: #1f2937;
+  --texto-suave: #6b7280;
+  --borde: #d1d5db;
+  --fondo: #f9fafb;
+  --blanco: #ffffff;
+  --error: #dc2626;
+  --exito: #16a34a;
+  --radio: 20px;
+  --sombra: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: var(--fondo);
+  color: var(--texto);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px;
+}
+
+/* === Contenedor principal === */
+.contenedor {
+  background: var(--blanco);
+  border-radius: 16px;
+  box-shadow: var(--sombra);
+  width: 100%;
+  max-width: 680px;
+  overflow: hidden;
+}
+
+/* === Encabezado === */
+.encabezado {
+  background: var(--primario);
+  color: #000;
+  padding: 30px 40px;
+}
+
+.encabezado h1 {
+  font-size: 1.8rem;
+  margin-bottom: 6px;
+}
+
+.encabezado p {
+  opacity: 0.85;
+  font-size: 0.95rem;
+}
+
+/* === Formulario === */
+.formulario-contacto {
+  padding: 35px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* === Fila doble (dos campos lado a lado) === */
+.fila-doble {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 520px) {
+  .fila-doble {
+    grid-template-columns: 1fr;
+  }
+  .formulario-contacto {
+    padding: 25px 20px;
+  }
+}
+
+/* === Campos individuales === */
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.campo label,
+.label-grupo {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--texto);
+}
+
+.obligatorio {
+  color: var(--error);
+  margin-left: 3px;
+}
+
+/* === Inputs, select, textarea === */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1.5px solid var(--borde);
+  border-radius: var(--radio);
+  font-size: 0.95rem;
+  color: var(--texto);
+  background: var(--blanco);
+  transition: border-color 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--primario-oscuro);
+  box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.15);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+
+/* === Texto de ayuda === */
+.ayuda {
+  font-size: 0.78rem;
+  color: var(--texto-suave);
+}
+
+/* === Radios y checkboxes === */
+.opciones-radio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 4px;
+}
+
+.campo-check {
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+/* === Botones === */
+.acciones {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+
+.btn-primario,
+.btn-secundario {
+  padding: 12px 28px;
+  border-radius: var(--radio);
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.1s, box-shadow 0.2s;
+}
+
+.btn-primario {
+  background: var(--primario);
+  color: #000;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+
+.btn-primario:hover {
+  background: var(--primario-oscuro);
+  transform: translateY(-5px) scale(1.05);
+}
+
+.btn-secundario {
+  background: transparent;
+  color: var(--texto-suave);
+  border: 1.5px solid var(--borde);
+}
+
+.btn-secundario:hover {
+  background: var(--fondo);
+}
